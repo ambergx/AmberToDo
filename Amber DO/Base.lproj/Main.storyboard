@@ -66,5 +66,39 @@
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="126.5625"/>
         </scene>
+        <!--Detail-->
+        <scene sceneID="Du8-Fo-jdp">
+            <objects>
+                <viewController storyboardIdentifier="task" id="V6N-0F-KrO" customClass="Detail" customModule="Amber_DO" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zI1-Ua-U1E">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZoR-4Y-6xU">
+                                <rect key="frame" x="12" y="56" width="390" height="43.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43.5" id="WIl-aN-khA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ZoR-4Y-6xU" firstAttribute="top" secondItem="Smf-5O-W02" secondAttribute="top" constant="12" id="0YG-jc-hYb"/>
+                            <constraint firstItem="ZoR-4Y-6xU" firstAttribute="leading" secondItem="Smf-5O-W02" secondAttribute="leading" constant="12" id="YiS-Df-zzl"/>
+                            <constraint firstItem="Smf-5O-W02" firstAttribute="trailing" secondItem="ZoR-4Y-6xU" secondAttribute="trailing" constant="12" id="yBF-Ps-md5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Smf-5O-W02"/>
+                    </view>
+                    <connections>
+                        <outlet property="label" destination="ZoR-4Y-6xU" id="f2Z-iz-h4V"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oIv-hv-UgD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1857" y="127"/>
+        </scene>
     </scenes>
 </document>
