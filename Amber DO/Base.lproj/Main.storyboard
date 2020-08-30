@@ -40,7 +40,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" id="E4D-aI-Lyy"/>
+                    <navigationItem key="navigationItem" id="E4D-aI-Lyy">
+                        <barButtonItem key="rightBarButtonItem" title="Add" id="wH3-PM-ZjQ">
+                            <connections>
+                                <action selector="didTapAdd" destination="BYZ-38-t0r" id="08a-de-Omx"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="u6v-CH-f6a" id="LZd-T4-l6I"/>
                     </connections>
@@ -99,6 +105,41 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oIv-hv-UgD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1857" y="127"/>
+        </scene>
+        <!--Creation-->
+        <scene sceneID="7Gy-Ch-UdL">
+            <objects>
+                <viewController storyboardIdentifier="new" id="M8e-d0-RhI" customClass="Creation" customModule="Amber_DO" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mDE-aH-yHo">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hIK-LS-0ud">
+                                <rect key="frame" x="12" y="56" width="390" height="43.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43.5" id="ks9-do-CUf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="cph-mw-W6H" firstAttribute="trailing" secondItem="hIK-LS-0ud" secondAttribute="trailing" constant="12" id="K5g-6t-Bxw"/>
+                            <constraint firstItem="hIK-LS-0ud" firstAttribute="top" secondItem="cph-mw-W6H" secondAttribute="top" constant="12" id="MSc-S0-cPj"/>
+                            <constraint firstItem="hIK-LS-0ud" firstAttribute="leading" secondItem="cph-mw-W6H" secondAttribute="leading" constant="12" id="r8e-AD-cgD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="cph-mw-W6H"/>
+                    </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="field" destination="hIK-LS-0ud" id="30U-WA-cnn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nGy-vr-QmQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1048" y="839"/>
         </scene>
     </scenes>
 </document>

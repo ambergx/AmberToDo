@@ -14,6 +14,7 @@
 		9FE4E92D24FB7CCC00F4B3E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FE4E92C24FB7CCC00F4B3E8 /* Assets.xcassets */; };
 		9FE4E93024FB7CCC00F4B3E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FE4E92E24FB7CCC00F4B3E8 /* LaunchScreen.storyboard */; };
 		9FE4E93E24FBABFD00F4B3E8 /* Detail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE4E93D24FBABFD00F4B3E8 /* Detail.swift */; };
+		9FE4E94024FBC49D00F4B3E8 /* Creation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE4E93F24FBC49D00F4B3E8 /* Creation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		9FE4E92F24FB7CCC00F4B3E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9FE4E93124FB7CCC00F4B3E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9FE4E93D24FBABFD00F4B3E8 /* Detail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Detail.swift; sourceTree = "<group>"; };
+		9FE4E93F24FBC49D00F4B3E8 /* Creation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Creation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				9FE4E92E24FB7CCC00F4B3E8 /* LaunchScreen.storyboard */,
 				9FE4E93124FB7CCC00F4B3E8 /* Info.plist */,
 				9FE4E93D24FBABFD00F4B3E8 /* Detail.swift */,
+				9FE4E93F24FBC49D00F4B3E8 /* Creation.swift */,
 			);
 			path = "Amber DO";
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FE4E94024FBC49D00F4B3E8 /* Creation.swift in Sources */,
 				9FE4E92824FB7CCA00F4B3E8 /* ViewController.swift in Sources */,
 				9FE4E92424FB7CCA00F4B3E8 /* AppDelegate.swift in Sources */,
 				9FE4E93E24FBABFD00F4B3E8 /* Detail.swift in Sources */,

@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     @IBOutlet var tableView: UITableView!
     
     var tasks = [String]()
+    var currentText: String?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,6 +25,23 @@ class ViewController: UIViewController {
         
         tableView.delegate = self
         tableView.dataSource = self
+    }
+    
+    @IBAction func didTapAdd() {
+        let vc = storyboard?.instantiateViewController(identifier: "new") as! Creation
+        vc.title = "New To Do Item"
+        vc.save = {
+            DispatchQueue.main.async {
+                self.saveItem()
+            }
+        }
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    func saveItem() -> Void {
+        tasks.append(self.currentText!)
+        
+        tableView.reloadData()
     }
 }
 
